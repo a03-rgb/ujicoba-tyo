@@ -38,7 +38,7 @@
     // Function to spawn cylinders
     function spawncylinder() {
       const forward = camera.getDirection(BABYLON.Axis.Z); // direction phone is pointing
-      const cylinder = BABYLON.MeshBuilder.CreateBox("cylinder", { size: 0.5 }, scene);
+      const cylinder = BABYLON.MeshBuilder.Createcylinder("cylinder", { size: 0.5 }, scene);
       cylinder.position = camera.position.add(forward.scale(5)); // place 5 units ahead
       cylinder.rotation.x = Math.random() * Math.PI/2;
       cylinder.rotation.y = Math.random() * Math.PI/2;
